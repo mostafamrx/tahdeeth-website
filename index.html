@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحديث | حلول رقمية ذكية لأعمالك</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0B1120',
+                        onyx: '#0F172A',
+                        electric: '#0EA5E9',
+                        mint: '#10B981',
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-midnight text-white font-sans antialiased selection:bg-electric selection:text-white overflow-x-hidden">
+    
+    <header class="fixed w-full top-0 z-50 bg-midnight/80 backdrop-blur-md border-b border-gray-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <div class="flex-shrink-0 flex items-center cursor-pointer hover:opacity-90 transition-opacity duration-300">
+                    <img src="assets/images/logo.png" alt="تحديث" class="h-16 w-auto object-contain scale-110 sm:scale-125 origin-right">
+                </div>
+
+                <nav class="hidden md:flex space-x-8 space-x-reverse items-center">
+                    <a href="#hero" class="text-gray-300 hover:text-electric transition-colors duration-200 font-medium text-sm">الرئيسية</a>
+                    <a href="#problems" class="text-gray-300 hover:text-electric transition-colors duration-200 font-medium text-sm">المشاكل والحلول</a>
+                    <a href="#services" class="text-gray-300 hover:text-electric transition-colors duration-200 font-medium text-sm">خدماتنا</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-electric transition-colors duration-200 font-medium text-sm">أعمالنا</a>
+                    <a href="#contact" class="text-gray-300 hover:text-electric transition-colors duration-200 font-medium text-sm">تواصل معنا</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#contact" class="bg-electric hover:bg-transparent hover:text-electric border border-electric text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.2)] hover:shadow-[0_0_20px_rgba(14,165,233,0.5)]">
+                        احجز استشارتك
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-midnight/95 border-b border-gray-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#hero" class="block text-gray-300 hover:text-electric py-2 font-medium text-sm">الرئيسية</a>
+            <a href="#problems" class="block text-gray-300 hover:text-electric py-2 font-medium text-sm">المشاكل والحلول</a>
+            <a href="#services" class="block text-gray-300 hover:text-electric py-2 font-medium text-sm">خدماتنا</a>
+            <a href="#portfolio" class="block text-gray-300 hover:text-electric py-2 font-medium text-sm">أعمالنا</a>
+            <a href="#contact" class="block text-gray-300 hover:text-electric py-2 font-medium text-sm">تواصل معنا</a>
+            <a href="#contact" class="block bg-electric text-center text-white py-2.5 rounded-md font-bold text-sm mt-4">احجز استشارتك</a>
+        </div>
+    </header>
+
+    <section id="hero" class="relative pt-20 pb-16 overflow-hidden min-h-screen flex flex-col justify-center items-center bg-midnight">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-electric/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+        <div class="w-full mb-12 relative group" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="assets/images/hero-banner.jpeg" alt="تحديث - حلول رقمية ذكية لأعمالك" class="w-full h-auto object-cover block shadow-[0_10px_50px_rgba(0,0,0,0.5)]">
+            <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-midnight to-transparent pointer-events-none"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 w-full" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-electric hover:bg-transparent hover:text-electric border border-electric text-white px-8 py-3.5 rounded-lg font-bold text-lg transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]">
+                    احجز استشارتك المجانية
+                </a>
+                <a href="#problems" class="bg-transparent hover:bg-gray-800/60 border border-gray-700 text-white px-8 py-3.5 rounded-lg font-bold text-lg transition-all duration-300">
+                    استكشف كيف نساعدك ⬇️
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="problems" class="py-24 bg-midnight relative border-t border-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <span class="text-electric font-bold text-xs uppercase tracking-widest bg-electric/10 px-3 py-1 rounded-full border border-electric/20">التشخيص التشغيلي</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-4 mb-6 leading-tight">هل تستنزف هذه التحديات أرباح شركتك ووقت فريقك يومياً؟</h2>
+                <p class="text-gray-400 text-lg leading-relaxed">نحن ندرك معاناتك التشغيلية العميقة، ونقدم لك حلولاً جذرية مبنية على البيانات لتحويل المشاكل إلى مكاسب ملموسة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-onyx rounded-2xl p-8 border border-gray-800/80 hover:border-electric/50 hover:-translate-y-1.5 transition-all duration-300 group shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-midnight border border-gray-700/60 flex items-center justify-center mb-6 group-hover:shadow-[0_0_15px_rgba(14,165,233,0.25)] transition-all">
+                            <svg class="w-7 h-7 text-electric" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">فوضى البيانات وغياب الرؤية الحقيقية</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed"><span class="text-red-400/90 font-bold">المشكلة:</span> غرق الإدارة التنفيذية في ملفات إكسيل معقدة ومشتتة، مما يحجب الرؤية الدقيقة عن الأرباح الصافية أو جودة أداء الفروع والعروض.</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed border-t border-gray-800/60 pt-4"><span class="text-mint font-bold">الحل مع تحديث:</span> هيكلة البيانات المبعثرة وصبها في لوحات تحكم تفاعلية (Dashboards) حية تدعم القرار اللحظي بالأرقام.</p>
+                </div>
+
+                <div class="bg-onyx rounded-2xl p-8 border border-gray-800/80 hover:border-electric/50 hover:-translate-y-1.5 transition-all duration-300 group shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-midnight border border-gray-700/60 flex items-center justify-center mb-6 group-hover:shadow-[0_0_15px_rgba(14,165,233,0.25)] transition-all">
+                            <svg class="w-7 h-7 text-electric" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">استنزاف الوقت في العمليات اليدوية التكرارية</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed"><span class="text-red-400/90 font-bold">المشكلة:</span> ضياع مئات الساعات الثمينة من الموظفين في نقل البيانات وتحديث السجلات يدوياً بين الأنظمة، مما يرفع نسبة الأخطاء البشرية القاتلة.</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed border-t border-gray-800/60 pt-4"><span class="text-mint font-bold">الحل مع تحديث:</span> بناء وتصميم مسارات أتمتة برمجية ذكية تتولى تنفيذ العمليات التشغيلية الروتينية ومزامنة الأنظمة ذاتياً في الخلفية.</p>
+                </div>
+
+                <div class="bg-onyx rounded-2xl p-8 border border-gray-800/80 hover:border-electric/50 hover:-translate-y-1.5 transition-all duration-300 group shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-midnight border border-gray-700/60 flex items-center justify-center mb-6 group-hover:shadow-[0_0_15px_rgba(14,165,233,0.25)] transition-all">
+                            <svg class="w-7 h-7 text-electric" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">تسرب بنود المخزون وتشتت قواعد المحاسبة</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed"><span class="text-red-400/90 font-bold">المشكلة:</span> فجوة الربط المعمارية بين نقاط البيع وحركة المستودعات، والاعتماد على برمجيات جاهزة ومكلفة لا تفهم طبيعة السوق المحلي.</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed border-t border-gray-800/60 pt-4"><span class="text-mint font-bold">الحل مع تحديث:</span> تطوير أنظمة تخطيط موارد (ERP) مركزية وقوية، تضبط حسابات التكاليف والمخزون لحظياً ومتوافقة مع الأنظمة المحاسبية.</p>
+                </div>
+
+                <div class="bg-onyx rounded-2xl p-8 border border-gray-800/80 hover:border-electric/50 hover:-translate-y-1.5 transition-all duration-300 group shadow-md flex flex-col justify-between" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-midnight border border-gray-700/60 flex items-center justify-center mb-6 group-hover:shadow-[0_0_15px_rgba(14,165,233,0.25)] transition-all">
+                            <svg class="w-7 h-7 text-electric" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">الجمود التشغيلي والمبيعات التقليدية</h3>
+                        <p class="text-gray-400 mb-6 leading-relaxed"><span class="text-red-400/90 font-bold">المشكلة:</span> ثبات معدلات النمو ومواجهة مشاكل معقدة في تسعير المنتجات أو هندسة القوائم (Menu Engineering) وغياب قنوات البيع الرقمية السريعة.</p>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed border-t border-gray-800/60 pt-4"><span class="text-mint font-bold">الحل مع تحديث:</span> توظيف خوارزميات الذكاء الاصطناعي التنبؤية مع قنوات ومتاجر متكاملة تقنياً لتعظيم معدل المبيعات وهوامش الأرباح.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-onyx/40 relative border-t border-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <span class="text-mint font-bold text-xs uppercase tracking-widest bg-mint/10 px-3 py-1 rounded-full border border-mint/20">هندسة الحلول</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-4 mb-4">محفظة حلولنا التقنية المتقدمة</h2>
+                <p class="text-electric text-lg font-semibold">بنية برمجية متكاملة مصممة خصيصاً لرفع كفاءة حوكمة أعمالك</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-midnight rounded-2xl p-8 border border-gray-800/80 hover:border-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-16 h-16 rounded-xl bg-onyx border border-gray-700/60 flex items-center justify-center mb-6 text-electric group-hover:scale-105 group-hover:text-mint transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-6">أنظمة تخطيط الموارد (ERP) المخصصة</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs text-mint font-extrabold uppercase tracking-wider block mb-1">القيمة للإدارة</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">السيطرة التشغيلية والمحاسبية الكاملة على أصول شركتك، والربط الشامل لكافة الفروع من نافذة حوكمة مركزية.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs text-electric font-extrabold uppercase tracking-wider block mb-1">التميز التقني</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">تخصيص كامل لأقوى أطر العمل مفتوحة المصدر مع توفير الدعم للغة العربية ومواصفات الفوترة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight rounded-2xl p-8 border border-gray-800/80 hover:border-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-16 h-16 rounded-xl bg-onyx border border-gray-700/60 flex items-center justify-center mb-6 text-electric group-hover:scale-105 group-hover:text-mint transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-6">ذكاء الأعمال ولوحات التحكم (BI)</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs text-mint font-extrabold uppercase tracking-wider block mb-1">القيمة للإدارة</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">تحويل السجلات الصامتة والميتة إلى قرارات نمو ذكية مبنية على الاستقراء اللحظي لأداء فروعك وهوامش الربحية.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs text-electric font-extrabold uppercase tracking-wider block mb-1">التميز التقني</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">بناء وتطوير مستودعات وهياكل بيانات ديناميكية تسحب وتحدث مؤشرات القيادة دون تدخل بشري.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight rounded-2xl p-8 border border-gray-800/80 hover:border-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="w-16 h-16 rounded-xl bg-onyx border border-gray-700/60 flex items-center justify-center mb-6 text-electric group-hover:scale-105 group-hover:text-mint transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-6">أتمتة العمليات التشغيلية (Automation)</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs text-mint font-extrabold uppercase tracking-wider block mb-1">القيمة للإدارة</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">القضاء النهائي على تأخير معالجة المستندات والطلبات، وتحرير الموظفين للتركيز على المهام الإستراتيجية.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs text-electric font-extrabold uppercase tracking-wider block mb-1">التميز التقني</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">تصميم وهندسة مسارات عمل معقدة ومؤمنة بالكامل للربط والمزامنة بين التطبيقات والمنصات السحابية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight rounded-2xl p-8 border border-gray-800/80 hover:border-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] group flex flex-col lg:col-span-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="w-16 h-16 flex-shrink-0 rounded-xl bg-onyx border border-gray-700/60 flex items-center justify-center text-electric group-hover:scale-105 group-hover:text-mint transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="text-2xl font-bold text-white mb-6">تطبيقات الذكاء الاصطناعي التنبؤي تعلم الآلة</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                <div>
+                                    <span class="text-xs text-mint font-extrabold uppercase tracking-wider block mb-1">القيمة للإدارة</span>
+                                    <p class="text-gray-400 text-sm leading-relaxed">استباق وتوقع سلوك العملاء والمبيعات بدقة لتصميم سياسات تسعير وحملات تسويقية تضمن مضاعفة المبيعات.</p>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-electric font-extrabold uppercase tracking-wider block mb-1">التميز التقني</span>
+                                    <p class="text-gray-400 text-sm leading-relaxed">تطوير خوارزميات محاكاة متقدمة ونماذج مخصصة لقطاع المطاعم والتجزئة مثل أنظمة هندسة المنيو.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-midnight rounded-2xl p-8 border border-gray-800/80 hover:border-electric transition-all duration-300 hover:shadow-[0_0_30px_rgba(14,165,233,0.08)] group flex flex-col justify-between" data-aos="fade-up" data-aos-delay="500">
+                    <div>
+                        <div class="w-16 h-16 rounded-xl bg-onyx border border-gray-700/60 flex items-center justify-center mb-6 text-electric group-hover:scale-105 group-hover:text-mint transition-all duration-300">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-6">الواجهات والمتاجر الإلكترونية المتكاملة</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs text-mint font-extrabold uppercase tracking-wider block mb-1">القيمة للإدارة</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">امتلاك نافذة بيع وتواصل رقمية سريعة قادرة على خدمة عملاء شركتك بكفاءة عالية على مدار الساعة.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs text-electric font-extrabold uppercase tracking-wider block mb-1">التميز التقني</span>
+                                <p class="text-gray-400 text-sm leading-relaxed">بناء منصات ويب ومتاجر متجاوبة بالكامل وربطها المباشر بقواعد بيانات الـ ERP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-midnight relative border-t border-gray-800/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20" data-aos="fade-up">
+                <span class="text-electric font-bold text-xs uppercase tracking-widest bg-electric/10 px-3 py-1 rounded-full border border-electric/20">الأثر الرقمي وثقة العمليات</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-4 mb-4">قصص نجاح رقمية موثقة</h2>
+                <p class="text-gray-400 text-lg">نحن لا نبيع أكواداً مجردة، بل نبني أنظمة تحقق قفزات معيارية في أداء الشركات ونتائجها المالية.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                
+                <div class="bg-onyx rounded-2xl overflow-hidden border border-gray-800/80 hover:border-electric transition-all duration-300 group shadow-xl flex flex-col h-full" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="h-52 bg-gray-900 relative overflow-hidden border-b border-gray-800/60">
+                        <div class="absolute inset-0 bg-electric/5 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="assets/images/project1.PNG" alt="محاكاة المبيعات وهندسة المنيو" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-midnight border border-electric/30 text-electric text-xs font-bold rounded-md mb-4">ذكاء اصطناعي وتعلم آلة</span>
+                            <h3 class="text-xl font-bold text-white mb-4">نظام محاكاة المبيعات وهندسة المنيو</h3>
+                            <div class="space-y-3 text-sm">
+                                <p class="text-gray-400"><span class="text-red-400/90 font-bold block mb-1">التحدي:</span> عشوائية وضع عروض الأسعار والتسعير المباشر بدون نماذج محاكاة تختبر التأثير على أرباح قطاع الأغذية.</p>
+                                <p class="text-gray-400"><span class="text-electric font-bold block mb-1">الحل التقني:</span> تطوير خوارزميات أوتوماتيكية تحلل البيانات التاريخية للمبيعات لبناء نماذج محاكاة مالية تنبؤية.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 border-t border-gray-800/60 pt-4 mt-6"><span class="text-mint font-bold block mb-1">النتيجة الاستراتيجية:</span> تعظيم وضبط هوامش أرباح الأصناف المبيعية لتمكين متخذي القرار من إطلاق عروض مضمونة العائد.</p>
+                    </div>
+                </div>
+
+                <div class="bg-onyx rounded-2xl overflow-hidden border border-gray-800/80 hover:border-electric transition-all duration-300 group shadow-xl flex flex-col h-full" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="h-52 bg-gray-900 relative overflow-hidden border-b border-gray-800/60">
+                        <div class="absolute inset-0 bg-electric/5 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="assets/images/project2.png" alt="لوحات تحكم تحليلية" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-midnight border border-electric/30 text-electric text-xs font-bold rounded-md mb-4">تحليل البيانات (BI)</span>
+                            <h3 class="text-xl font-bold text-white mb-4">مركز قيادة مالي وتشغيلي لحظي</h3>
+                            <div class="space-y-3 text-sm">
+                                <p class="text-gray-400"><span class="text-red-400/90 font-bold block mb-1">التحدي:</span> تأخر تسليم التقارير الرقابية، وغياب آليات حية لرصد انحرافات وتباين بنود المخزون (Inventory Variance).</p>
+                                <p class="text-gray-400"><span class="text-electric font-bold block mb-1">الحل التقني:</span> بناء وتصميم لوحات تحكم مالية متقدمة ترتبط مباشرة بقواعد البيانات المركزية والتشغيلية للفروع.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 border-t border-gray-800/60 pt-4 mt-6"><span class="text-mint font-bold block mb-1">النتيجة الاستراتيجية:</span> توفير رؤية رقابية فورية تمكن الإدارة العليا من وقف الهدر التشغيلي المالي فور حدوثه وفي نفس اليوم.</p>
+                    </div>
+                </div>
+
+                <div class="bg-onyx rounded-2xl overflow-hidden border border-gray-800/80 hover:border-electric transition-all duration-300 group shadow-xl flex flex-col h-full" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="h-52 bg-gray-900 relative overflow-hidden border-b border-gray-800/60">
+                        <div class="absolute inset-0 bg-electric/5 group-hover:bg-transparent transition-all z-10"></div>
+                        <img src="assets/images/project3.png" alt="أتمتة العمليات ومزامنة البيانات" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col justify-between flex-grow">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-midnight border border-electric/30 text-electric text-xs font-bold rounded-md mb-4">أتمتة الأنظمة (Automation)</span>
+                            <h3 class="text-xl font-bold text-white mb-4">منظومة مزامنة ومعالجة الشكاوى الفورية</h3>
+                            <div class="space-y-3 text-sm">
+                                <p class="text-gray-400"><span class="text-red-400/90 font-bold block mb-1">التحدي:</span> بطء الاستجابة لشكاوى واقتراحات العملاء نتيجة النقل والتدقيق اليدوي المستمر للجداول والبيانات مابين التطبيقات والواتساب.</p>
+                                <p class="text-gray-400"><span class="text-electric font-bold block mb-1">الحل التقني:</span> هندسة وتشييد مسارات أتمتة تدفقية تربط قنوات الاتصال الفورية وسجلات التخزين السحابية (Google Sheets).</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 border-t border-gray-800/60 pt-4 mt-6"><span class="text-mint font-bold block mb-1">النتيجة الاستراتيجية:</span> إلغاء الأخطاء الإدارية تماماً وتقليص زمن الاستجابة إلى ثوانٍ معدودة، مما ضاعف مؤشرات ولاء العملاء.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-onyx relative border-t border-gray-800/40 overflow-hidden">
+        
+        <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/3 w-[500px] h-[500px] bg-mint/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div class="flex flex-col justify-center" data-aos="fade-left">
+                    <span class="text-electric font-bold text-xs uppercase tracking-widest bg-electric/10 px-3 py-1 rounded-full border border-electric/20 w-fit mb-4">تأمين المستقبل الرقمي</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">جاهز لمضاعفة أرباحك<br><span class="text-transparent bg-clip-text bg-gradient-to-l from-electric to-mint">وبناء نظامك الرقمي المتكامل؟</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        احجز جلسة استشارتك الاستراتيجية المجانية (مدة 30 دقيقة). سنقوم معاً بتشريح وتحليل التحديات التشغيلية والمالية التي تواجه مؤسستك ورسم خطة تحول ذكية ومخصصة بالكامل لبيئة عملك.
+                    </p>
+                    
+                    <div class="space-y-5">
+                        <a href="https://wa.me/201030654348" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 group cursor-pointer w-fit">
+                            <div class="w-12 h-12 rounded-xl bg-midnight border border-gray-800 flex items-center justify-center text-mint group-hover:border-mint group-hover:shadow-[0_0_15px_rgba(16,185,129,0.2)] transition-all duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-gray-500 font-semibold mb-0.5">اتصال مباشر عبر واتساب</span>
+                                <span class="text-white font-bold group-hover:text-mint transition-colors dir-ltr block text-right text-base">+20 1030654348</span>
+                            </div>
+                        </a>
+                        
+                        <a href="mailto:info.tahdeeth@gmail.com" class="flex items-center gap-4 group cursor-pointer w-fit">
+                            <div class="w-12 h-12 rounded-xl bg-midnight border border-gray-800 flex items-center justify-center text-electric group-hover:border-electric group-hover:shadow-[0_0_15px_rgba(14,165,233,0.2)] transition-all duration-300">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-gray-500 font-semibold mb-0.5">المراسلة الإلكترونية الرسمية</span>
+                                <span class="text-white font-bold group-hover:text-electric transition-colors text-base">info.tahdeeth@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-midnight p-8 rounded-2xl border border-gray-800/80 shadow-2xl relative" data-aos="fade-right">
+                    <form id="contactForm" class="space-y-6">
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-400 mb-2">الاسم بالكامل</label>
+                                <input type="text" name="fullName" required placeholder="أدخل اسمك" class="w-full bg-onyx border border-gray-700/80 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-400 mb-2">اسم الشركة</label>
+                                <input type="text" name="companyName" placeholder="أدخل اسم شركتك" class="w-full bg-onyx border border-gray-700/80 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-400 mb-2">رقم الجوال (واتساب)</label>
+                                <input type="tel" name="phoneNumber" required placeholder="رقم للتواصل السريع" class="w-full bg-onyx border border-gray-700/80 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-gray-400 mb-2">الخدمة المطلوبة</label>
+                                <div class="relative">
+                                    <select name="serviceType" required class="w-full bg-onyx border border-gray-700/80 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all appearance-none text-sm cursor-pointer">
+                                        <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                                        <option value="web">تطوير المنصات والمتاجر الإلكترونية المتكاملة</option>
+                                        <option value="data">ذكاء الأعمال والتحليل المالي المتقدم</option>
+                                        <option value="automation">أتمتة العمليات التشغيلية ومزامنة الأنظمة</option>
+                                        <option value="ai">حلول الذكاء الاصطناعي التنبؤي</option>
+                                        <option value="erp">تأسيس وتخصيص أنظمة تخطيط الموارد (ERP)</option>
+                                        <option value="other">استشارة تقنية / حلول مخصصة أخرى</option>
+                                    </select>
+                                    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-3 text-gray-500">
+                                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-400 mb-2">كيف يمكننا مساعدتك؟ (اختياري)</label>
+                            <textarea name="details" rows="4" placeholder="نبذة مختصرة عن التحديات التشغيلية التي تواجهها الشركة..." class="w-full bg-onyx border border-gray-700/80 rounded-lg px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-electric focus:ring-1 focus:ring-electric transition-all resize-none text-sm"></textarea>
+                        </div>
+
+                        <div id="successMessage" class="hidden bg-mint/10 border border-mint/30 text-mint px-4 py-3 rounded-lg text-center font-bold text-sm transition-all duration-300">
+                            تم استلام طلبك بنجاح وسرية تامة! سيقوم مهندسونا بالتواصل معك خلال ساعات.
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full bg-electric hover:bg-transparent hover:text-electric border border-electric text-white py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.3)] hover:shadow-[0_0_25px_rgba(14,165,233,0.6)]">
+                            تأكيد حجز الاستشارة
+                        </button>
+                    </form>
+
+                    <script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbxbQTw2Dy_qJbUlsXLjKacdMZ8QrOP5Ikt5mJxtbmOViHSAog1Yaa9Iyqbzc4gLgQ4nfQ/exec';
+                        const form = document.getElementById('contactForm');
+                        const submitBtn = document.getElementById('submitBtn');
+                        const successMessage = document.getElementById('successMessage');
+
+                        form.addEventListener('submit', e => {
+                            e.preventDefault();
+                            
+                            submitBtn.innerHTML = 'جاري تسجيل طلبك بنجاح...';
+                            submitBtn.disabled = true;
+                            submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+
+                            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                            .then(response => {
+                                successMessage.classList.remove('hidden'); 
+                                form.reset(); 
+                                submitBtn.innerHTML = 'تأكيد حجز الاستشارة'; 
+                                submitBtn.disabled = false;
+                                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                                
+                                setTimeout(() => { successMessage.classList.add('hidden'); }, 6000);
+                            })
+                            .catch(error => {
+                                console.error('Error!', error.message);
+                                submitBtn.innerHTML = 'حدث خطأ، حاول الإرسال مرة أخرى أو راسلنا واتساب';
+                                submitBtn.disabled = false;
+                                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                            });
+                        });
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-midnight py-12 border-t border-gray-900 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="flex items-center justify-center mb-6 cursor-pointer hover:opacity-90 transition-opacity duration-300">
+                <a href="#hero">
+                    <img src="assets/images/logo.png" alt="تحديث" class="h-14 sm:h-16 w-auto object-contain">
+                </a>
+            </div>
+            
+            <p class="text-gray-500 text-sm">
+                &copy; 2026 شركة تحديث للحلول الرقمية. جميع الحقوق محفوظة.
+            </p>
+            
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, /* سرعة الحركة بالمللي ثانية */
+            once: true, /* تنفيذ الحركة مرة واحدة عند النزول */
+            offset: 100, /* بدء الحركة قبل وصول العنصر بـ 100 بيكسل */
+        });
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

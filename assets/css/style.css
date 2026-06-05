@@ -1,0 +1,16 @@
+/* تأثير التمرير الناعم بين الأقسام */
+html {
+    scroll-behavior: smooth;
+}
+
+/* إخفاء شريط التمرير الافتراضي لإعطاء مظهر أنظف (اختياري) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0B1120;
+}
+::-webkit-scrollbar-thumb {
+    background: #0EA5E9;
+    border-radius: 4px;
+}
